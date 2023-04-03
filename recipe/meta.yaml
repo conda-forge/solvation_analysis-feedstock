@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solvation_analysis-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solvation-analysis-{{ version }}.tar.gz
   sha256: 18503c20d12d745da33d5da5f06f4a2f0482dbbe55364ad34ca3eec416cb2e71
 
 build:
