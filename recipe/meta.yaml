@@ -42,9 +42,6 @@ test:
     - pip check
   requires:
     - pip
-    - pytest
-    - pathlib
-    - rdkit
 
 about:
   home: https://pypi.org/project/solvation-analysis/
