@@ -28,7 +28,7 @@ requirements:
     - plotly
     - statsmodels
     - rdkit
-    - versioneer
+    - versioneer[toml]
 
 test:
   imports:
