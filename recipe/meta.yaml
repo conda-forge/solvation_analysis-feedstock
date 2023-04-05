@@ -1,13 +1,13 @@
 {% set name = "solvation_analysis" %}
-{% set version = "0.1.5" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solvation_analysis-{{ version }}.tar.gz
-  sha256: f33b867f42aace0d4f9199da86b21d2bd04a3cf9dab8ba039e0ee21bdd81b919
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('_', '-') }}-{{ version }}.tar.gz
+  sha256: 18503c20d12d745da33d5da5f06f4a2f0482dbbe55364ad34ca3eec416cb2e71
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://pypi.org/project/solvation-analysis/
-  summary: 'Rapidly understand solvation with MDAnalysis.'
+  summary: Rapidly understand solvation with MDAnalysis.
   description: |
     Solvation analysis implements a robust, cohesive, and fast set of
     methods for analyzing the solvation structure of a liquid. It seamlessly
