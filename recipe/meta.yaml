@@ -20,7 +20,7 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - pathlib
+#    - pathlib
     - pytest
     - rdkit
     - versioneer-518
@@ -31,9 +31,9 @@ requirements:
     - pandas
     - matplotlib-base
     - scipy
-    - plotly
+#    - plotly
     - statsmodels
-    - rdkit
+#    - rdkit
 
 test:
   imports:
