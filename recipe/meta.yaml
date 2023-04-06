@@ -18,15 +18,15 @@ requirements:
   build:
     - versioneer-518
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - pathlib
     - pytest
     - rdkit
     - versioneer-518
   run:
-    - python >=3.7
-    - numpy >=1.16.0
+    - python >=3.8
+    - numpy >=1.18.0
     - mdanalysis >=2.0.0
     - pandas
     - matplotlib-base
@@ -39,7 +39,7 @@ test:
   imports:
     - solvation_analysis
   commands:
-    - pip install rdkit plotly pathlib
+    - pip install rdkit pytest pathlib
     - pip check
   requires:
     - pip
