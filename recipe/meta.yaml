@@ -37,8 +37,9 @@ requirements:
 
 test:
   imports:
-    - solvation-analysis
+    - solvation_analysis
   commands:
+    - pip install rdkit plotly pathlib
     - pip check
   requires:
     - pip
