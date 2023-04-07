@@ -39,10 +39,12 @@ test:
   imports:
     - solvation_analysis
   commands:
-    - pip install rdkit pytest pathlib
     - pip check
   requires:
     - pip
+    - rdkit
+    - pytest
+    - pathlib
 
 about:
   home: https://pypi.org/project/solvation-analysis/
