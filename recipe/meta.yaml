@@ -25,7 +25,7 @@ requirements:
     - python >=3.8
     - numpy >=1.20.0
     - mdanalysis >=2.0.0
-    - rdkit
+    - rdkit-pypi
     - pytest
     - pandas
     - matplotlib-base
