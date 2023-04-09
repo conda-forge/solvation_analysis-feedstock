@@ -25,19 +25,18 @@ requirements:
     - python >=3.8
     - numpy >=1.20.0
     - mdanalysis >=2.0.0
+    - rdkit
     - pytest
     - pandas
     - matplotlib-base
     - scipy
     - plotly
     - statsmodels
-    - rdkit
 
 test:
   imports:
     - solvation_analysis
   commands:
-#    - pip install rdkit pytest pathlib
     - pip check
   requires:
     - pip
