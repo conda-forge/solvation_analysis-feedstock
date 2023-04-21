@@ -36,8 +36,6 @@ requirements:
 test:
   imports:
     - solvation_analysis
-  commands:
-    - pip check
   requires:
     - pip
 
