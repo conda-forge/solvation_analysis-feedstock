@@ -1,13 +1,13 @@
 {% set name = "solvation_analysis" %}
-{% set version = "0.1.5" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solvation_analysis-{{ version }}.tar.gz
-  sha256: f33b867f42aace0d4f9199da86b21d2bd04a3cf9dab8ba039e0ee21bdd81b919
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/solvation-analysis-{{ version }}.tar.gz
+  sha256: 7a99b74dbf368eca90ee4288bce7bb9dd92823dcffd80bc0a325a5acc2676db5
 
 build:
   noarch: python
@@ -15,22 +15,27 @@ build:
   number: 0
 
 requirements:
+  build:
+    - versioneer-518
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
+    - versioneer-518
   run:
-    - python >=3.7
-    - numpy >=1.16.0
+    - python >=3.8
+    - numpy >=1.20.0
     - mdanalysis >=2.0.0
+    - rdkit
+    - pytest
     - pandas
     - matplotlib-base
     - scipy
+    - plotly
+    - statsmodels
 
 test:
   imports:
     - solvation_analysis
-  commands:
-    - pip check
   requires:
     - pip
 

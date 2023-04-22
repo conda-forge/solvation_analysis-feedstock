@@ -1,11 +1,11 @@
-About solvation_analysis
-========================
+About solvation_analysis-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/solvation_analysis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/solvation-analysis/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/solvation_analysis-feedstock/blob/main/LICENSE.txt)
 
 Summary: Rapidly understand solvation with MDAnalysis.
 
