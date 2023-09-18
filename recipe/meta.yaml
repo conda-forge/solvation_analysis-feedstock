@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -27,7 +27,7 @@ requirements:
     - mdanalysis >=2.0.0
     - rdkit
     - pytest
-    - pandas
+    - pandas <2.1
     - matplotlib-base
     - scipy
     - plotly
