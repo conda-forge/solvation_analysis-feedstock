@@ -1,5 +1,5 @@
 {% set name = "solvation_analysis" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b831ee4f244e38a1f8df61b0defe06051275cb5b8078329c89a44093df06ca8d
+  sha256: 22cb61b3f4ababad74532d860a83c623120705fe519169a2ad54b26bf747587b
 
 build:
   noarch: python
